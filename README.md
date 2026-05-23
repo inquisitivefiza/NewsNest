@@ -6,33 +6,8 @@ A modern Android news aggregator built with Clean Architecture, offline-first de
 
 ---
 
-## 📺 Demo
 
-[![NewsNest Demo](https://img.youtube.com/vi/usWWrsMuUTg/maxresdefault.jpg)](https://youtu.be/usWWrsMuUTg)
 
-> Click the thumbnail to watch the full demo on YouTube.
-
----
-
-## 📸 Screenshots
-
-### App Screens
-
-| Splash | Home | Offline Strip | Search |
-|--------|------|---------------|--------|
-| ![Splash](assets/screenshots/splash.jpeg) | ![Home](assets/screenshots/home.jpeg) | ![Offline](assets/screenshots/offline.jpeg) | ![Search](assets/screenshots/search.jpeg) |
-
-### Under the Hood
-
-| Room Database Inspector | WorkManager Background Task Inspector |
-|-------------------------|---------------------------------------|
-| ![Room DB](assets/screenshots/Roomdb.png) | ![WorkManager](assets/screenshots/WorkManager.png) |
-
-> **Room DB** — articles table live with `id`, `title`, `description`, `url`, `imageUrl`, `publishedAt`, `source`, `category` columns populated per category.
->
-> **WorkManager** — `NewsSyncWorker` enqueued and `SystemJobService` scheduled across multiple time slots, confirming periodic background sync is live on device.
-
----
 
 ## Problem Statement
 
@@ -58,6 +33,35 @@ The goal was not just to build *a* news app — it was to build one that demonst
 This project serves as a reference implementation of modern Android architecture for a real-world use case.
 
 ---
+
+## 📺 Demo
+
+[![NewsNest Demo](https://img.youtube.com/vi/usWWrsMuUTg/maxresdefault.jpg)](https://youtu.be/usWWrsMuUTg)
+
+> Click the thumbnail to watch the full demo on YouTube.
+
+---
+
+## 📸 Screenshots
+
+### App Screens
+
+| Splash | Home | Offline Strip | Search |
+|--------|------|---------------|--------|
+| ![Splash](assets/splash.jpeg) | ![Home](assets/home.jpeg) | ![Offline](assets/offline.jpeg) | ![Search](assets/search.jpeg) |
+
+### Under the Hood
+
+| Room Database Inspector | WorkManager Background Task Inspector |
+|-------------------------|---------------------------------------|
+| ![Room DB](assets/Roomdb.png) | ![WorkManager](assets/WorkManager.png) |
+
+> **Room DB** — articles table live with `id`, `title`, `description`, `url`, `imageUrl`, `publishedAt`, `source`, `category` columns populated per category.
+>
+> **WorkManager** — `NewsSyncWorker` enqueued and `SystemJobService` scheduled across multiple time slots, confirming periodic background sync is live on device.
+
+---
+
 
 ## Core Architecture — Clean Architecture + MVVM
 
